@@ -18,7 +18,7 @@
 }
 
 .rouble {
-  font-family: $ff-rouble;
+  font-family: $ff-roboto;
   /* stylelint-disable */
   text-transform: lowercase !important;
   font-weight: 400 !important;
@@ -68,4 +68,10 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
