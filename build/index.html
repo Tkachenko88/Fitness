@@ -9,43 +9,123 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page-body">
-    <header class="header">
-      <a class="header-link" href="index.html">
-        <img
-          class="header-link__img"
-          src="/img/Logo.svg"
-          height="36"
-          width="120"
-          alt="fitness logo"
-        />
-      </a>
-      <span class="header-contacts">8-800-555-55-55</span>
-    </header>
-    <main class="main-container">
-      <h1 class="visually-hidden">fitness center - SuperGym</h1>
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-wrapper">
-            <ul class="hero__list">
-              <li class="hero__item">Тренажёрный зал</li>
-              <li class="hero__item">Групповые занятия</li>
-              <li class="hero__item">Кардио-зона</li>
-            </ul>
-            <div class="hero-wrapper__block hero-block">
-              <span class="hero-block__city">Омск</span>
-              <span class="hero-block__center">Фитнес центр</span>
-              <span class="hero-block__tickets">Купить абонемент</span>
-            </div>
-          </div>
+    <div class="wrapper">
+      <header class="header">
+        <a class="header-link" href="index.html">
           <img
-            class="hero-img"
-            src="/img/desktop/Rectangle.jpg"
-            width="500"
-            height="524"
-            alt="Superman foto"
+            class="header-link__img"
+            src="/img/Logo.svg"
+            height="36"
+            width="120"
+            alt="fitness logo"
           />
-        </div>
-      </section>
-    </main>
+        </a>
+        <span class="header-contacts">8-800-555-55-55</span>
+      </header>
+      <main class="main-container">
+        <h1 class="visually-hidden">fitness center - SuperGym</h1>
+        <section class="hero">
+          <div class="hero-container">
+            <div class="hero-wrapper">
+              <ul class="hero__list">
+                <li class="hero__item">Тренажёрный зал</li>
+                <li class="hero__item">Групповые занятия</li>
+                <li class="hero__item">Кардио-зона</li>
+              </ul>
+              <div class="hero-wrapper__block hero-block">
+                <span class="hero-block__city">Омск</span>
+                <span class="hero-block__center">Фитнес центр</span>
+                <span class="hero-block__tickets">Купить абонемент</span>
+              </div>
+            </div>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1366px)"
+                srcset="
+                  /img/desktop/Rectangle.webp    1x,
+                  /img/desktop/Rectangle@2x.webp 2x
+                "
+              />
+              <img
+                class="hero-img"
+                src="/img/desktop/Rectangle.jpg"
+                width="500"
+                height="524"
+                alt="Superman foto"
+              />
+            </picture>
+          </div>
+        </section>
+        <section class="presentation">
+          <div class="presentation-text">
+            <h2>Тренажерный зал</h2>
+            <span>Просторный зал площадью 900 кв/м</span>
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место
+              для укрепления тела и здоровья. Тренажерный зал оснащен всем
+              необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40
+              тренажерами. Также в фитнес центре есть несколько оборудованных
+              залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <div class="presentation-video">
+            <img
+              src="/img/desktop/gym.jpg"
+              width="660"
+              height="401"
+              alt="gym photo"
+            />
+            <iframe
+              width="364"
+              height="228"
+              poster="/img/desktop/video.png"
+              src="https://www.youtube.com/embed/9TZXsZItgdw?si=GVw_aCaf0c0xLB5w&amp;controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section class="subscription">
+          <h2 class="subscription__title">Абонементы</h2>
+          <ul class="subscription-month month-list">
+            <li class="month-list__item month-list__item--active">1 месяц</li>
+            <li class="month-list__item">6 месяцев</li>
+            <li class="month-list__item">12 месяцев</li>
+          </ul>
+          <ul class="subscription-card card-list">
+            <li class="card-list__item">
+              <h3 class="card-list__item-title">С тренером</h3>
+              <span class="card-list__item-description">12 занятий</span>
+              <span class="card-list__item-price">5000 </span>
+              <button class="btn" type="button">
+                <a href="#">Купить абонемент</a>
+              </button>
+            </li>
+            <li class="card-list__item">
+              <h3 class="card-list__item-title">Дневной</h3>
+              <span class="card-list__item-description">с 8:00 до 17:00</span>
+              <span class="card-list__item-price">1700</span>
+              <button class="btn" type="button">
+                <a href="#">Купить абонемент</a>
+              </button>
+            </li>
+            <li class="card-list__item">
+              <h3 class="card-list__item-title">Полный день</h3>
+              <span class="card-list__item-description">с 8:00 до 22:00 </span>
+              <span class="card-list__item-price">2700</span>
+              <button class="btn" type="button">
+                <a href="#">Купить абонемент</a>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

@@ -314,20 +314,29 @@ template {
   display: none;
 }
 
+/* roboto-condensed-300 - cyrillic */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-condensed-v27-cyrillic-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-condensed-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-condensed-v27-latin-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v27-cyrillic-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* roboto-condensed-700 - latin */
+/* roboto-condensed-700 - cyrillic */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-condensed-v27-latin-700.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v27-cyrillic-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* alumni-sans-100 - cyrillic */
 @font-face {
@@ -523,6 +532,29 @@ button,
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 auto;
+  color: #102654;
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrapper {
@@ -1268,6 +1300,158 @@ ul {
   padding: 27px 56px;
   border: 2px solid #FFF;
   text-align: center;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 120px 103px 235px;
+}
+
+.presentation-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 145px;
+}
+
+.presentation-text h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.presentation-text span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 95px;
+}
+
+.presentation-text p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+}
+
+.presentation-video {
+  position: relative;
+  min-width: 660px;
+}
+
+.presentation-video iframe {
+  position: absolute;
+  top: 268px;
+  left: -52px;
+}
+
+.subscription {
+  padding: 120px 103px;
+  text-align: center;
+  background-color: #F8F9FC;
+}
+
+.subscription__title {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.month-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 350px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(16, 38, 84, 0.5);
+  position: relative;
+  margin-bottom: 51px;
+}
+.month-list::after {
+  content: "";
+  height: 2px;
+  width: 350px;
+  background-color: rgba(120, 120, 120, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.month-list__item {
+  padding-bottom: 14px;
+}
+.month-list__item--active {
+  color: #102654;
+  border-bottom: 3px solid #D10A42;
+}
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-list__item {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+}
+
+.card-list__item-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 65px;
+  margin-bottom: 11px;
+}
+
+.card-list__item-description {
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.card-list__item-price {
+  color: #E8E8E8;
+  font-size: 100px;
+  font-weight: 700;
+  min-height: 150px;
 }
 
 /* @mixin hover-focus {
