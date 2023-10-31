@@ -685,6 +685,11 @@ ul {
 .btn.focus-visible:focus {
   opacity: 0.8;
 }
+.btn--price {
+  border: 2px solid #102654;
+  background-color: #ffffff;
+  color: #102654;
+}
 
 .custom-input,
 .custom-textarea {
@@ -1431,14 +1436,14 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: red;
+  background-color: #ffffff;
+  padding: 65px 77px;
 }
 
 .card-list__item-title {
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
-  margin-top: 65px;
   margin-bottom: 11px;
 }
 
@@ -1452,6 +1457,9 @@ ul {
   font-size: 100px;
   font-weight: 700;
   min-height: 150px;
+  line-height: 150%;
+  opacity: 0.48;
+  margin-bottom: 35px;
 }
 
 /* @mixin hover-focus {
