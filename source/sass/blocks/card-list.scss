@@ -11,6 +11,13 @@
   align-items: center;
   background-color: $color-default-white;
   padding: 65px 77px;
+  z-index: 2;
+
+  &--active{
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(315deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);;
+  }
 }
 
 .card-list__item-title{

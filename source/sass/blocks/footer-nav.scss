@@ -1,0 +1,38 @@
+.footer-nav{
+  background-color: $color-black;
+  min-height: 105px;
+  padding: 40px 103px;
+}
+
+.footer-nav__container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-nav__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__social-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $ff-roboto;
+}
+
+.footer-nav__social-list{
+  gap: 20px;
+}
+
+.footer-nav__list-link{
+  color: $color-default-white;
+}

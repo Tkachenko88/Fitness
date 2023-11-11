@@ -1,7 +1,7 @@
 .presentation-text{
   display: flex;
   flex-direction: column;
-  margin-right: 145px;
+  margin-right: 150px;
 }
 
 .presentation-text h2{
@@ -9,14 +9,18 @@
   font-size: 54px;
   font-weight: 600;
   line-height: 54px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
-.presentation-text span{
+.presentation-text h3{
   font-family: $ff-roboto;
   font-size: 22px;
   font-weight: 400;
   line-height: 22px;
+  margin: 0;
   margin-bottom: 95px;
+
 }
 
 .presentation-text p{

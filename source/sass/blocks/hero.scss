@@ -12,3 +12,17 @@
   color: $color-default-white;
   min-width: 113px;
 }
+
+.hero__link{
+  font-family: $ff-roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 27px 56px;
+  border: 2px solid #FFF;
+  text-align: center;
+  color: $color-default-white;
+  width: 230px;
+  margin-left: 40px;
+}

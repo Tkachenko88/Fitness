@@ -1,9 +1,9 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+// @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -37,11 +37,18 @@
 @import "blocks/subscription";
 @import "blocks/month-list";
 @import "blocks/card-list";
-// @import "blocks/";
-// @import "blocks/";
-// @import "blocks/";
-// @import "blocks/";
-// @import "blocks/";
+@import "blocks/game";
+@import "blocks/date-container";
+@import "blocks/game-wrapper";
+@import "blocks/game-container";
+@import "blocks/jury-list";
+@import "blocks/jury-title";
+@import "blocks/jury";
+@import "blocks/jury-slider";
+@import "blocks/advantages";
+@import "blocks/promotion";
+@import "blocks/card-promotion";
+@import "blocks/footer-nav";
 // @import "blocks/";
 // @import "blocks/";
 // @import "blocks/";

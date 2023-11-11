@@ -2,6 +2,7 @@
   padding: 120px 103px;
   text-align: center;
   background-color: $color-background;
+  position: relative;
 }
 
 .subscription__title{
@@ -10,4 +11,10 @@
   line-height: 54px;
   margin: 0;
   margin-bottom: 38px;
+}
+
+.subscription--pancakes{
+  position: absolute;
+  right: -10px;
+  bottom: -180px;
 }

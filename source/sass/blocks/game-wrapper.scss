@@ -1,0 +1,29 @@
+.game-wrapper{
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.game-wrapper__text{
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 76px;
+  text-transform: uppercase;
+  font-family: $ff-placeholder;
+}
+
+.game-wrapper__description{
+  margin-bottom: 55px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.game-wrapper__link{
+  width: 100%;
+  justify-content: center;
+  padding: 27px 56px;
+  background-color: $color-red;
+  border: 2px solid $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+}
