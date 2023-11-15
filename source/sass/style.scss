@@ -4,6 +4,8 @@
 // @import "vendor/normalize";
 // Swiper 8.4.7
 @import "vendor/swiper";
+@import "vendor/data-tabs.scss";
+@import "vendor/accordion.scss";
 
 // Global
 // ---------------------------------
@@ -49,8 +51,8 @@
 @import "blocks/promotion";
 @import "blocks/card-promotion";
 @import "blocks/footer-nav";
-// @import "blocks/";
-// @import "blocks/";
+@import "blocks/faq";
+@import "blocks/review";
 // @import "blocks/";
 // @import "blocks/";
 // @import "blocks/";
