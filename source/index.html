@@ -813,6 +813,7 @@
         </section>
         <section class="review">
           <h2>Отзывы</h2>
+
           <div class="swiper" review-swiper>
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
@@ -823,6 +824,28 @@
                   </h3>
                   <p>
                     «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="/img/desktop/Ellipse.jpg" alt="фото клиента" width="80" height="80">
+                <div>
+                  <h3>
+                    Иван Иванов
+                  </h3>
+                  <p>
+                    Отличный фитнес центр с отличными тренерами и разнообразными тренировками. Удобное расположение и приятная атмосфера. Рекомендую!
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="/img/desktop/Ellipse.jpg" alt="фото клиента" width="80" height="80">
+                <div>
+                  <h3>
+                    Иван Иванов
+                  </h3>
+                  <p>
+                    Отличный фитнес центр с отличными тренерами и разнообразными тренировками. Удобное расположение и приятная атмосфера. Рекомендую!
                   </p>
                 </div>
               </li>
@@ -851,10 +874,68 @@
                   </svg>
               </button>
             </div>
-          </div>
-        </section>
+       </section>
       </main>
       <footer class="footer">
+        <div class="footer__wrapper">
+          <section class="footer-form">
+              <h2 class="footer-form__title">Бесплатное занятие</h2>
+              <div class="footer-form__content" data-form-validate>
+                <form action="https://echo.htmlacademy.ru/" method="POST">
+                  <div class="footer-form__wrapper">
+                    <div class="footer-form__input input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
+                      <label class="input__label">
+                        <input class="input__content" type="text" id="user-name" name="user-name" placeholder="Имя">
+                      </label>
+                    </div>
+                    <div class="footer-form__input input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                      <label class="input__label">
+                        <input class="input__content" type="tel" id="user-phone" name="user-phone" placeholder="Телефон">
+                      </label>
+                    </div>
+                  </div>
+                  <button class="footer-form__submit" type="submit"><span>отправить</span></button>
+                </form>
+              </div>
+          </section>
+          <section class="footer-contacts">
+              <h2 class="footer-contacts__title">Контакты</h2>
+              <address class="footer-contacts__address">
+                <div class="footer-contacts__list">
+                    <h3 class="footer-contacts__name">
+                      Адрес:
+                    </h3>
+                    <p class="footer-contacts__description">
+                      г. Омск, ул. 60 лет Октября, 7
+                    </p>
+
+                    <h3 class="footer-contacts__name">
+                      График работы:
+                    </h3>
+                    <p class="footer-contacts__description">
+                      Пн-Вс: с 8:00 до 22:00
+                    </p>
+                  </div>
+
+                <div class="footer-contacts__list">
+                  <h3 class="footer-contacts__name">
+                    Телефон:
+                  </h3>
+                  <p class="footer-contacts__description">
+                    8-800-555-55-55
+                  </p>
+
+                  <h3 class="footer-contacts__name">
+                    Email:
+                  </h3>
+                  <p class="footer-contacts__description">
+                    omsk@supergym.ru
+                  </p>
+                </div>
+              </div>
+              </address>
+          </section>
+        </div>
         <nav class="footer-nav">
           <div class="footer-nav__container">
             <a class="footer-nav__link" href="index.html">

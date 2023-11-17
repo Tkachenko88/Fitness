@@ -1,0 +1,14 @@
+.input__content{
+  background-color: $color-main;
+  border: none;
+  border-bottom: 1px solid $color-line;
+  padding-bottom: 4px;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  line-height: 22px;
+
+  &::placeholder{
+    color: $color-default-white;
+  }
+
+}

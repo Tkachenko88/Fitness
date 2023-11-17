@@ -1,0 +1,51 @@
+.footer-form{
+  background-color: $color-main;
+  width: 50%;
+}
+
+.footer-form__title{
+  font-family: $ff-placeholder;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  color: $color-default-white;
+  margin: 60px 203px 39px 103px;
+  text-align: center;
+}
+
+.footer-form__wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 410px;
+}
+
+.footer-form__content{
+  padding-left: 103px;
+}
+
+.footer-form__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  padding: 0;
+  padding-bottom: 28px;
+  font-family:$ff-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.footer-form__submit{
+  width: 410px;
+  padding: 27px 56px;
+  background-color: $color-main;
+  border: 2px solid  $color-default-white;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  justify-content: center;
+}
