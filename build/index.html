@@ -91,73 +91,87 @@
             ></iframe>
           </div>
         </section>
-        <section class="subscription" id="subscription">
+        <section class="subscription" id="subscription" data-tabs="parent">
           <h2 class="subscription__title">Абонементы</h2>
-          <ul class="subscription-month month-list">
-            <li class="month-list__item month-list__item--active">1 месяц</li>
-            <li class="month-list__item">6 месяцев</li>
-            <li class="month-list__item">12 месяцев</li>
+          <ul class="subscription-month month-list" data-tabs="controls">
+            <li class="month-list__item" data-tabs="control">1 месяц</li>
+            <li class="month-list__item" data-tabs="control">6 месяцев</li>
+            <li class="month-list__item" data-tabs="control">12 месяцев</li>
           </ul>
-          <ul class="subscription-card card-list">
+          <div data-tabs="content">
+          <ul class="subscription-card card-list" data-tabs="element">
             <li class="card-list__item">
               <h3 class="card-list__item-title">С тренером</h3>
-              <span class="card-list__item-description">12 занятий</span>
-              <span class="card-list__item-price">5000 </span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <p class="card-list__item-description">12 занятий</p>
+              <div class="card-list__wrapper">
+                <span class="card-list__item-price">5000 </span>
+                <b class="card-list__item-text">5000</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" fill="none" viewBox="0 0 30 42"><path fill="#102654" fill-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5a11.5 11.5 0 1 0 0-23H4Z" clip-rule="evenodd"/><path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd"/><path fill="#102654" fill-rule="evenodd" d="M3.66 28.32V18h6v10.32H21v6H9.66V42h-6v-7.68H0v-6h3.66Z" clip-rule="evenodd"/></svg>
+              </div>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
             <li class="card-list__item card-list__item--active">
               <h3 class="card-list__item-title">Дневной</h3>
-              <span class="card-list__item-description">с 8:00 до 17:00</span>
-              <span class="card-list__item-price">1700</span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <p class="card-list__item-description">с 8:00 до 17:00</p>
+              <div class="card-list__wrapper">
+                <span class="card-list__item-price">1700 </span>
+                <b class="card-list__item-text">1700</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" fill="none" viewBox="0 0 30 42"><path fill="#102654" fill-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5a11.5 11.5 0 1 0 0-23H4Z" clip-rule="evenodd"/><path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd"/><path fill="#102654" fill-rule="evenodd" d="M3.66 28.32V18h6v10.32H21v6H9.66V42h-6v-7.68H0v-6h3.66Z" clip-rule="evenodd"/></svg>
+              </div>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
             <li class="card-list__item">
               <h3 class="card-list__item-title">Полный день</h3>
-              <span class="card-list__item-description">с 8:00 до 22:00 </span>
-              <span class="card-list__item-price">2700 </span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <p class="card-list__item-description">с 8:00 до 22:00 </p>
+              <div class="card-list__wrapper">
+                <span class="card-list__item-price">2700 </span>
+                <b class="card-list__item-text">2700</b>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" fill="none" viewBox="0 0 30 42"><path fill="#102654" fill-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5a11.5 11.5 0 1 0 0-23H4Z" clip-rule="evenodd"/><path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd"/><path fill="#102654" fill-rule="evenodd" d="M3.66 28.32V18h6v10.32H21v6H9.66V42h-6v-7.68H0v-6h3.66Z" clip-rule="evenodd"/></svg>
+              </div>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
           </ul>
-          <ul class="subscription-card card-list visually-hidden">
+          <ul class="subscription-card card-list " data-tabs="element">
             <li class="card-list__item">
               <h3 class="card-list__item-title">С тренером</h3>
-              <span class="card-list__item-description">72 занятиz</span>
+              <p class="card-list__item-description">72 занятия</p>
               <span class="card-list__item-price">30000 </span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
-            <li class="card-list__item">
+            <li class="card-list__item card-list__item--active" >
               <h3 class="card-list__item-title">Дневной</h3>
-              <span class="card-list__item-description">с 8:00 до 17:00</span>
+              <p class="card-list__item-description">с 8:00 до 17:00</p>
               <span class="card-list__item-price">10200</span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
             <li class="card-list__item">
               <h3 class="card-list__item-title">Полный день</h3>
-              <span class="card-list__item-description">с 8:00 до 22:00 </span>
+              <p class="card-list__item-description">с 8:00 до 22:00 </p>
               <span class="card-list__item-price">16200 </span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
           </ul>
-          <ul class="subscription-card card-list visually-hidden">
+          <ul class="subscription-card card-list" data-tabs="element">
             <li class="card-list__item">
               <h3 class="card-list__item-title">С тренером</h3>
-              <span class="card-list__item-description">120 занятий</span>
+              <p class="card-list__item-description">120 занятий</p>
               <span class="card-list__item-price">60000 </span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
-            <li class="card-list__item">
+            <li class="card-list__item card-list__item--active">
               <h3 class="card-list__item-title">Дневной</h3>
-              <span class="card-list__item-description">с 8:00 до 17:00</span>
+              <p class="card-list__item-description">с 8:00 до 17:00</p>
               <span class="card-list__item-price">20400</span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
             <li class="card-list__item">
               <h3 class="card-list__item-title">Полный день</h3>
-              <span class="card-list__item-description">с 8:00 до 22:00 </span>
+              <p class="card-list__item-description">с 8:00 до 22:00 </p>
               <span class="card-list__item-price">32400 </span>
-              <a class="btn btn--price" href="#">Купить абонемент</a>
+              <a class="btn btn__price" href="#">Купить абонемент</a>
             </li>
           </ul>
+        </div>
           <img
             class="subscription--pancakes"
             src="/img/desktop/pancakes.png"
@@ -885,12 +899,12 @@
                   <div class="footer-form__wrapper">
                     <div class="footer-form__input input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
                       <label class="input__label">
-                        <input class="input__content" type="text" id="user-name" name="user-name" placeholder="Имя">
+                        <input class="input__content" type="text" id="user-name" name="user-name" placeholder="Имя" >
                       </label>
                     </div>
                     <div class="footer-form__input input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
                       <label class="input__label">
-                        <input class="input__content" type="tel" id="user-phone" name="user-phone" placeholder="Телефон">
+                        <input class="input__content" type="tel" id="user-phone" name="user-phone" placeholder="Телефон" >
                       </label>
                     </div>
                   </div>

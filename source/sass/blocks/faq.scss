@@ -33,6 +33,7 @@
   color: $color-main;
   font-family: $ff-roboto;
   background-color: $color-default-white;
+  cursor: pointer;
 }
 
 .faq__tabs-btn.is-active{
@@ -99,4 +100,5 @@
   color: $color-main;
   background-color: $color-background;
   padding-right: 17px;
+  cursor: pointer;
 }

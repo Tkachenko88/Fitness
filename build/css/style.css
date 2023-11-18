@@ -1342,9 +1342,6 @@ ul {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.btn--red {
-  background-color: #ED0233;
-}
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -1357,7 +1354,7 @@ ul {
 .btn.focus-visible:focus {
   opacity: 0.8;
 }
-.btn--price {
+.btn__price {
   border: 2px solid #102654;
   background-color: #ffffff;
   color: #102654;
@@ -2095,8 +2092,10 @@ ul {
 
 .month-list__item {
   padding-bottom: 14px;
+  cursor: pointer;
 }
-.month-list__item--active {
+
+.month-list > .is-active {
   color: #102654;
   border-bottom: 3px solid #D10A42;
 }
@@ -2142,7 +2141,12 @@ ul {
 
 .card-list__item-description {
   font-weight: 300;
+  margin: 0;
   margin-bottom: 12px;
+}
+
+.card-list__wrapper {
+  position: relative;
 }
 
 .card-list__item-price {
@@ -2153,6 +2157,20 @@ ul {
   line-height: 150%;
   opacity: 0.48;
   margin-bottom: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-list__item-text {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.card-list__item--active > .btn__price {
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  border: none;
+  color: #ffffff;
 }
 
 .game {
@@ -3221,6 +3239,7 @@ ul {
   color: #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .faq__tabs-btn.is-active {
@@ -3289,6 +3308,7 @@ ul {
   color: #102654;
   background-color: #F8F9FC;
   padding-right: 17px;
+  cursor: pointer;
 }
 
 .review {
@@ -3431,6 +3451,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .input__content {
@@ -3441,6 +3462,7 @@ ul {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
+  color: #ffffff;
 }
 .input__content::-webkit-input-placeholder {
   color: #ffffff;

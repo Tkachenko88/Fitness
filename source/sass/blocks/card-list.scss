@@ -29,7 +29,12 @@
 
 .card-list__item-description{
   font-weight: 300;
+  margin: 0;
   margin-bottom: 12px;
+}
+
+.card-list__wrapper{
+  position: relative;
 }
 
 .card-list__item-price{
@@ -40,4 +45,18 @@
   line-height: 150%;
   opacity: 0.48;
   margin-bottom: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-list__item-text{
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.card-list__item--active >.btn__price{
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  border: none;
+  color: $color-default-white;
 }

@@ -10,10 +10,6 @@
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-red;
-  }
-
   &:disabled {
     opacity: 0.5;
 
@@ -24,7 +20,7 @@
     opacity: 0.8;
   }
 
-  &--price{
+  &__price{
     border: 2px solid #102654;
     background-color: $color-default-white;
     color: $color-main;

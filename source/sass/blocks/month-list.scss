@@ -24,9 +24,10 @@
 
 .month-list__item{
   padding-bottom: 14px;
+  cursor: pointer;
+}
 
-  &--active{
-    color: $color-main;
+.month-list >.is-active{
+  color: $color-main;
     border-bottom: 3px solid #D10A42;
-  }
 }
