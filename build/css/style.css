@@ -277,7 +277,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  color: #102654;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -1409,8 +1409,7 @@ ul {
   min-height: 48px;
   margin-left: auto;
   padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-bottom: 1px solid #74819C;
   outline: none;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -1898,6 +1897,7 @@ ul {
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .hero {
@@ -1999,6 +1999,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 150px;
+  min-width: 350px;
 }
 
 .presentation-text h2 {
@@ -2107,6 +2108,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 35px;
 }
 
 .card-list__item {
@@ -2124,7 +2126,6 @@ ul {
           align-items: center;
   background-color: #ffffff;
   padding: 65px 77px;
-  z-index: 2;
 }
 .card-list__item--active {
   border: 7px solid;
@@ -2147,6 +2148,13 @@ ul {
 
 .card-list__wrapper {
   position: relative;
+  margin-bottom: 35px;
+}
+
+.card-list__wrapper svg {
+  position: absolute;
+  top: 80px;
+  right: 19px;
 }
 
 .card-list__item-price {
@@ -2156,15 +2164,15 @@ ul {
   min-height: 150px;
   line-height: 150%;
   opacity: 0.48;
-  margin-bottom: 35px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .card-list__item-text {
   font-size: 60px;
   font-weight: 700;
+  color: #103AAE;
+  position: absolute;
+  top: 88px;
+  left: 19px;
 }
 
 .card-list__item--active > .btn__price {
@@ -2323,6 +2331,12 @@ ul {
 .jury-slider__btn {
   background-color: #ffffff;
   border: none;
+}
+.jury-slider__btn--next {
+  right: 37px;
+}
+.jury-slider__btn--prev {
+  left: 37px;
 }
 
 .jury-slider__slider {
@@ -3198,13 +3212,17 @@ ul {
   background-color: #F8F9FC;
 }
 
-.faq__title {
+.faq h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
   line-height: 54px;
   margin: 0;
   margin-bottom: 51px;
+}
+
+.faq__content {
+  padding-top: 33px;
 }
 
 .faq__container {
@@ -3225,7 +3243,7 @@ ul {
   margin-right: 40px;
 }
 
-.faq__tabs-btn {
+.faq__tabs button {
   width: 260px;
   padding: 18px 48px;
   -webkit-box-pack: center;
@@ -3242,24 +3260,22 @@ ul {
   cursor: pointer;
 }
 
-.faq__tabs-btn.is-active {
+.faq__tabs button.is-active {
   color: #ffffff;
   background: var(--1, linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%));
   border: none;
 }
 
-.faq__list {
+.faq ul {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  margin-top: 33px;
 }
 
 .faq__item-content {
   font-size: 18px;
   font-weight: 300;
   margin: 0;
-  margin-bottom: 58px;
   max-width: 660px;
 }
 
@@ -3273,10 +3289,10 @@ ul {
   padding-top: 8px;
 }
 
-.faq__item {
+.faq li {
   position: relative;
 }
-.faq__item:before {
+.faq li:before {
   content: "";
   height: 1px;
   width: 860px;
@@ -3285,7 +3301,7 @@ ul {
   top: -33px;
   left: 0;
 }
-.faq__item:last-child:after {
+.faq li:last-child:after {
   content: "";
   height: 1px;
   width: 860px;
@@ -3315,6 +3331,14 @@ ul {
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
+  position: relative;
+}
+
+.review__wrapper {
+  max-width: 560px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.2);
+          box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.2);
   position: relative;
 }
 
@@ -3369,16 +3393,14 @@ ul {
 .review__btn {
   position: absolute;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: pointer;
 }
 .review__btn--prev {
-  top: 56%;
-  left: 340px;
+  left: -55px;
 }
 .review__btn--next {
-  top: 56%;
-  right: 340px;
+  right: -55px;
 }
 
 .footer__wrapper {
@@ -3478,6 +3500,10 @@ ul {
 }
 .input__content::placeholder {
   color: #ffffff;
+}
+
+.input__label {
+  padding-bottom: 10px;
 }
 
 .footer-contacts {

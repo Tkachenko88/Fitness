@@ -1,6 +1,7 @@
 .card-list{
   display: flex;
   justify-content: space-between;
+  gap: 35px;
 }
 
 .card-list__item{
@@ -11,7 +12,6 @@
   align-items: center;
   background-color: $color-default-white;
   padding: 65px 77px;
-  z-index: 2;
 
   &--active{
     border: 7px solid;
@@ -35,6 +35,13 @@
 
 .card-list__wrapper{
   position: relative;
+  margin-bottom: 35px;
+}
+
+.card-list__wrapper svg{
+  position: absolute;
+  top: 80px;
+  right: 19px;
 }
 
 .card-list__item-price{
@@ -44,15 +51,15 @@
   min-height: 150px;
   line-height: 150%;
   opacity: 0.48;
-  margin-bottom: 35px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .card-list__item-text{
   font-size: 60px;
   font-weight: 700;
+  color: #103AAE;
+  position: absolute;
+  top: 88px;
+  left: 19px;
 }
 
 .card-list__item--active >.btn__price{
